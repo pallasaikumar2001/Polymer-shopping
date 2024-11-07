@@ -3,6 +3,17 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #f4f4f4; 
+}
+
+.page-wrapper {
+    max-width: 1024px; 
+    width: 100%; 
+    margin: 0 auto;
 }
 
 .container {
@@ -16,7 +27,6 @@ body {
     align-items: center;
     padding: 10px 20px;
 }
-
 .head h1, .head p {
     margin: 0;
 }
@@ -39,6 +49,7 @@ body {
     position: relative;
     margin-bottom: 20px;
 }
+
 .state {
     display: flex;
     gap: 10px;
@@ -47,7 +58,6 @@ body {
 .state .entryarea {
     flex: 1; 
 }
-
 
 input {
     width: 100%;
@@ -92,49 +102,35 @@ input:focus + .labelline {
     justify-content: flex-start;
 }
 
-/* input[type="checkbox"] {
-    margin: 0; /* Remove default margin for a more aligned look */
-
-
-
 .expiry {
     display: flex;
     gap: 10px;
 }
 
-.expiry select ,.country{
+.expiry select, .country {
     flex: 1; 
     padding: 10px 0;
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid white;
     background: none;
     outline: none;
     font-size: 16px;
 }
 
-
-.expiry .entryarea {
-    flex: 1; 
-}
-
-
-
-.expiry select {
-    flex: 1;
-}
-
-.button {
-    margin-left:0px ;
+.placeorder {
     color: white;
-    width: 40%;
+    display: flex;
+    bottom: 0;
     padding: 0.8rem 7.2rem;
     text-align: center;
     background-color: black;
-    border-radius: 4px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 1.5rem;
     position: fixed;
-    bottom: 0;
+    justify-content: center;
+    left: 0;
+    right: 0;
+     
 }
 
 .menu-items {
@@ -153,49 +149,67 @@ input:focus + .labelline {
     padding: 10px;
     display: block;
 }
+
 .billing-address .entryarea {
     margin-bottom: 15px; 
 }
-
-
-
 
 select {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 4px;
 }
+
 .footer {
-    color: rgba(0, 0, 0, 0.508);
-    text-align: center;
-    .foot{
-        padding: 0.5rem 1rem;
-        background-color: black;
-        color: white;
-    }
+    visibility: hidden;
+    
+}
+
+.foot {
+    padding: 0.5rem 1rem;
+    background-color: black;
+    color: white;
 }
 
 
 @media (min-width: 768px) {
-
-    .menu-icon{
+    .menu-icon {
         visibility: hidden;
     }
-    
+
     .main {
         flex-direction: row;
-        max-width: 1024px;
     }
 
     .info, .payment {
         flex: 1;
         margin: 0 10px;
     }
-    .head{
-        max-width: 1024px;
 
+    .head {
+        max-width: 1024px;
+    }
+    .placeorder{
+        align-items: flex-start;
+        position: static;
+        padding: 0.3rem 1.5rem;
+        left: 0px;
+        width: auto; 
+        margin-top: 1.5rem; 
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+    }
+    
+    .summary-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .footer{
+        visibility: visible;
     }
     
 }
