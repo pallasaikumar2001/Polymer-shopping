@@ -107,6 +107,7 @@ button {
 }
 
 /* Desktop-specific styling */
+/* Desktop-specific styling */
 @media (min-width: 768px) {
     .option {
         display: flex;
@@ -130,6 +131,7 @@ button {
 
     .parent {
         justify-content: center;
+        row-gap: 4rem;
     }
 
     .sub-item {
@@ -145,6 +147,12 @@ button {
         align-items: center;
         margin: 0 auto;
     }
+    /* .child1,.child2{
+        img{
+            margin-top: 3.5rem;
+        }
+    } */
+    
 
     .head {
         max-width: 1440px;
@@ -164,5 +172,17 @@ button {
         column-gap: 2rem;
         font-size: small;
         margin-bottom: 2rem;
+    }
+    
+    button, p {
+        margin-bottom: 1.5rem;
+    }
+    
+    button {
+        padding: 0.7rem 1rem;
+        border: 2px solid black;
+        background-color: white;
+        cursor: pointer;
+        margin-bottom: 2rem; /* Add extra space under buttons for laptop/tablet */
     }
 }
