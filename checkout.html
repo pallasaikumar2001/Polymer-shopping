@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout page</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+   
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="head">
+            <i class="material-icons menu-icon" onclick="toggleMenu()">menu</i> 
+            <a href="shop.html"><div><b> S H O P </b></div></a>
+            <a href="cart.html"><i class="material-icons" style="opacity: 1;">shopping_cart</i></a>
+        </div>
+        <div class="menu-items option">
+            <a href="mouter.html"><div >Men's Outerwear</div></a>
+            <a href="louter.html"><div>Ladies Outerwear</div></a>
+            <a href="mt.html"><div>Men's T-Shirts</div></a>
+            <a href="lt.html"><div>Ladies T-Shirts</div></a>
+        </div>
+        <p style="text-align: center;font-size: 100%; ">Checkout</p>
+        <p style="color: gray; font-size: 80%;">Shop is a demo app - form data will not be sent</p>
+        <div class="main">
+            <div class="info">
+                <h4>Account Information</h4>
+                <div class="entryarea">
+                    <input type="text" required>
+                    <div class="labelline">Email</div>
+                </div>
+                <div class="entryarea">
+                    <input type="text" required>
+                    <div class="labelline">Phone Number</div>
+                </div>
+                
+                <h4>Shipping Address</h4>
+                <div class="entryarea">
+                    <input type="text" required>
+                    <div class="labelline">Address</div>
+                </div>
+                <div class="entryarea">
+                    <input type="text" required>
+                    <div class="labelline">City</div>
+                </div>
+                <div class="state">
+                    
+                    <div class="entryarea">
+                        <input type="text" required>
+                        <div class="labelline">Zip/Postalcode</div>
+                    </div>
+                    <div class="entryarea">
+                        <input type="text" required>
+                        <div class="labelline">State/Province</div>
+                    </div>
+                </div>
+                <p style="text-align: left;">country</p>
+                <select class="country" id=" country">
+                    <option value="America">United States</option>
+                    <option value="Canada">Canada</option>
+                    
+                </select>
+                <br>
+                
+                <h4>Billing Address</h4>
+                <div class="checkbox">
+                    <label for="billingCheckbox">Use different billing address</label>
+                    <input type="checkbox" id="billingCheckbox">
+                    
+                </div>
+
+                <div class="billing-address" style="display: none;">
+                    <div class="entryarea">
+                        <input type="text">
+                        <div class="labelline">Address</div>
+                    </div>
+                    <div class="entryarea">
+                        <input type="text">
+                        <div class="labelline">City</div>
+                    </div>
+                    <div class="state">
+                        <div class="entryarea">
+                            <input type="text">
+                            <div class="labelline">Zip/Postalcode</div>
+                        </div>
+                        <div class="entryarea">
+                            <input type="text">
+                            <div class="labelline">State/Province</div>
+                        </div>
+                    </div>
+                    <p style="text-align: left;">Country</p>
+                    <select class="country">
+                        <option value="America">United States</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                </div>
+                
+            </div>
+            <div class="payment">
+                <h4>Payment Method</h4>
+                <div class="entryarea">
+                    <input type="text" required>
+                    <div class="labelline">Cardholder Name</div>
+                </div>
+                <div class="entryarea">
+                    <input type="text" required>
+                    <div class="labelline">Card Number</div>
+                </div>
+                <p style="text-align: left;">Expiry</p>
+                <div class="expiry">
+                    <div><select name="" id="Month">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>   
+                    </select>
+                    </div>
+                    <div>
+                    <select name="" id=" Year">
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>   
+                    </select>
+                    </div>
+                    <div class="entryarea">
+                        <input type="text" required>
+                        <div class="labelline">CVV</div>
+                    </div>
+                </div>
+                <h4>Order Summary</h4>
+                    <div class="i1" style="display: flex; justify-content: space-between;">
+                        <p>Vastrm Hoodie</p>
+                        <p>$200</p>
+                    </div>
+                    <div class="i1" style="display: flex; justify-content: space-between;">
+                        <p>Anvil L/S Crew Neck - Grey</p>
+                        <p>$22.15</p>
+                    </div>
+                    <br>
+                    <div class="i1" style="display: flex; justify-content: space-between;">
+                        <p>Total</p>
+                        <p>$222.15</p>
+                    </div>
+                
+                <div class="button">PLACE ORDER</div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="last">Made by Polymer</p>
+            <button class="foot btn">DEMO ONLY</button>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-items');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        document.addEventListener('click', function(event) {
+            const menu = document.querySelector('.menu-items');
+            const menuButton = document.querySelector('.menu-button');
+            console.log(event.target);
+            if(event.target.classList.contains('menu-icon')) return;
+            if(event.target.classList.contains('menu-items')) return;
+                menu.style.display = 'none'; 
+        });
+        document.getElementById('billingCheckbox').addEventListener('change', function() {
+            const billingAddress = document.querySelector('.billing-address');
+            billingAddress.style.display = this.checked ? 'block' : 'none';
+        });
+
+
+    </script>
+</body>

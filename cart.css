@@ -1,0 +1,128 @@
+.body{
+    font-family: sans-serif;
+}
+.container {
+    font-family: sans-serif;
+    width:100%;
+    align-content: center;
+    /* margin: 20%;  */
+    justify-content: center;
+    /* padding:0 5%; */
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.subtitles{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+img {
+    width: 10%;
+    height: 100%;
+    /* padding: 2rem; */
+}
+
+.item1,.item2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.details {
+    width: 90%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+}
+.quantity{
+    display: flex;
+}
+
+.sub {
+    width: 60%;
+    /* display: flex; */
+    font-size:small;
+    color: rgba(0, 0, 0, 0.521);
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.sub p {
+    margin: 0;
+    padding: 0; 
+}
+
+.sub select {
+    border-color: white;
+    background-color: white;
+    margin-left: 5px; 
+    padding: 0; 
+}
+.final{
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 3rem;  
+    font-size: large;  
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    
+    top: 100%;
+    padding: 0.5rem 7rem ;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+.footer {
+    color: rgba(0, 0, 0, 0.508);
+    text-align: center;
+    .foot{
+        padding: 0.5rem 1rem;
+        background-color: black;
+        color: white;
+    }
+}
+
+
+@media (min-width: 768px){
+    .head{
+        /* display: flex; */
+        justify-content: space-between;
+        margin-bottom: 3.5rem;
+        .menu-icon{
+            visibility: hidden;
+        }
+        
+    }
+    .details{
+        display: flex;
+    }
+    .item1,.item2{
+        display: flex;
+
+    }
+    .sub{
+        display: flex;
+    }
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+        column-gap:rem;
+    }
+    .final{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    
+}
+

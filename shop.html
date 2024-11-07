@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+    <link rel="stylesheet" href="shop.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <i class="material-icons menu-icon" onclick="toggleMenu()">menu</i> 
+            <a href="shop.html"><div><b> S H O P </b></div></a>
+            <a href="cart.html"><i class="material-icons" style="opacity: 1;">shopping_cart</i></a>
+        </div>
+        <div class="menu-items option">
+            <a href="mensouters.html"><div>Men's Outerwear</div></a>
+            <a href="ladiesouter.html"><div>Ladies Outerwear</div></a>
+            <a href="menstshirts.html"><div>Men's T-Shirts</div></a>
+            <a href="ladiestshirts.html"><div>Ladies T-Shirts</div></a>
+        </div>
+        <div class="items-bar">
+            <a href="mensouters.html"><div>Men's Outerwear</div></a>
+            <a href="ladiesouter.html"><div>Ladies Outerwear</div></a>
+            <a href="menstshirts.html"><div>Men's T-Shirts</div></a>
+            <a href="ladiestshirts.html"><div>Ladies T-Shirts</div></a>
+        </div>
+        
+        <div class="parent">
+            <div class="sub-item">
+                <a href="mensouters.html"><img src="mens_outerwear.jpg" alt="Men's Outerwear"></a>
+                <p>Men's Outerwear</p>
+                <a href="mensouters.html"><button class="btn">SHOP NOW</button></a>
+            </div>
+            <div class="sub-item">
+                <a href="ladiesouter.html"><img src="ladies_outerwear.jpg" alt="Ladies' Outerwear"></a>
+                <p>Ladies Outerwear</p>
+                <a href="ladiesouter.html"><button class="btn">SHOP NOW</button></a>
+            </div>
+            <div class="sub-item">
+                <div class="child">
+                    <div class="child1">
+                        <a href="menstshirts.html"><img src="mens_tshirts.jpg" alt="Men's T-Shirts" class="a"></a>
+                        <p>Men's T-Shirts</p>
+                        <a href="menstshirts.html"><button class="btn">SHOP NOW</button></a>
+                    </div>
+                    <div class="child2">
+                        <a href="ladiestshirts.html"><img src="ladies_tshirts.jpg" alt="Ladies' T-Shirts" class="a"></a>
+                        <p>Ladies T-Shirts</p>
+                        <a href="ladiestshirts.html"><button class="btn">SHOP NOW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="last">Made by Polymer</p>
+            <button class="foot btn">DEMO ONLY</button>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-items');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        document.addEventListener('click', function(event) {
+            const menu = document.querySelector('.menu-items');
+            const menuButton = document.querySelector('.menu-button');
+            console.log(event.target);
+            if(event.target.classList.contains('menu-icon')) return;
+            if(event.target.classList.contains('menu-items')) return;
+                menu.style.display = 'none'; 
+            // }
+        });
+
+    </script>
+</body>
+</html>

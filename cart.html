@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart page</title>
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="head">
+            <i class="material-icons menu-icon" onclick="toggleMenu()">menu</i> 
+            <a href="shop.html"><div><b> S H O P </b></div></a>
+            <a href="cart.html"><i class="material-icons" style="opacity: 1;">shopping_cart</i></a>
+        </div>
+        <div class="subtitles">
+            <p>Your Cart</p>
+            <p>(2 items)</p>
+        </div>
+        <div class="main">
+            <div class="item1">
+                <img src="mensouters/outer2.jpg" alt="">
+                <div class="details">
+                    <div class="name">Anvil L/S Crew Neck - Grey</div>
+                    <div class="sub">
+                        <div class="quantity">
+                            <p>Qty:</p>
+                            <select name="" id=" size">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <p>size: M</p>
+                        <p>$22.15</p>
+                        <i class="material-icons" style="opacity: 1;">close</i>
+
+
+                    </div>
+                </div>                
+            </div>
+            <div class="item2">
+                <img src="mensouters/outer4.jpg" alt="">
+                <div class="details">
+                    <div class="name">Android Nylon Packable Jacket</div>
+                    <div class="sub">
+                        <div class="quantity">
+                            <p>Qty:</p>
+                            <select name="" id=" size">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <p>size: M</p>
+                        <p>$33.60</p>
+                        <i class="material-icons" style="opacity: 1;">close</i>
+
+
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="final">
+            
+            <h5>Total:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$55.75</h5>
+            
+            <a href="checkout.html"><button>CHECKOUT</button></a>
+        </div>
+    </div>
+
+
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-items');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        document.addEventListener('click', function(event) {
+            const menu = document.querySelector('.menu-items');
+            const menuButton = document.querySelector('.menu-button');
+            console.log(event.target);
+            if(event.target.classList.contains('menu-icon')) return;
+            if(event.target.classList.contains('menu-items')) return;
+                menu.style.display = 'none'; 
+        });
+
+    </script>
+</body>

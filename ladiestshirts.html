@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladies T-Shirts</title>
+    <link rel="stylesheet" href="outer,tshirts.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="head">
+            <i class="material-icons menu-icon" onclick="toggleMenu()">menu</i> 
+            <a href="shop.html"><div><b> S H O P </b></div></a>
+            <a href="cart.html"><i class="material-icons" style="opacity: 1;">shopping_cart</i></a>
+        </div>
+        <div class="menu-items option">
+            <a href="mensouter.html"><div>Men's Outerwear</div></a>
+            <a href="ladiesouter.html"><div>Ladies Outerwear</div></a>
+            <a href="menstshirts.html"><div>Men's T-Shirts</div></a>
+            <a href="ladiestshirts.html"><div>Ladies T-Shirts</div></a>
+        </div>
+        <div class="items-bar">
+            <a href="mensouters.html"><div>Men's Outerwear</div></a>
+            <a href="ladiesouter.html"><div>Ladies Outerwear</div></a>
+            <a href="menstshirts.html"><div>Men's T-Shirts</div></a>
+            <a href="ladiestshirts.html"><div>Ladies T-Shirts</div></a>
+        </div>
+        <img class="title-im" src="ladies_tshirts.jpg" alt="">
+        <div class="sub-title"><p style="color: black; text-align: center;">Ladies T-Shirts</p></div>
+        <div class="total-items"><p style="color: gray; text-align: center;font-size: small;">(19 items)</p></div>
+
+
+        <div class="list">
+            <div class="child">
+                <img src="ladies-tshirts/t1.jpg" alt="">
+                <h6>Ldies Modern Stretch Full Zip</h6>
+                <p>$41.60</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t2.jpg" alt="">
+                <h6>Ladies ColorBlock Wind Jacket</h6>
+                <p>$45.90</p>
+            </div>
+        
+            <div class="child">
+                <img src="ladies-tshirts/t3.jpg" alt="">
+                <h6>Ladies Voyage Fleece Jacket</h6>
+                <p>$48.00</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t4.jpg" alt="">
+                <h6>Ladies PulloverL/S Hood</h6>
+                <p>$36.50</p>
+            </div>
+        
+            <div class="child">
+                <img src="ladies-tshirts/t5.jpg" alt="">
+                <h6>Ladies Sonoma Hybrid Knit Jacket</h6>
+                <p>$84.85</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t6.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t7.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t8.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t9.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t10.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t11.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t12.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t13.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t14.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t15.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t16.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t17.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t18.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="ladies-tshirts/t19.jpg" alt="">
+                <h6>Ladies Yerba Quarter Zip</h6>
+                <p>$64.20</p>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p class="last">Made by Polymer</p>
+            <button class="foot btn">DEMO ONLY</button>
+        </div>       
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-items');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        document.addEventListener('click', function(event) {
+            const menu = document.querySelector('.menu-items');
+            const menuButton = document.querySelector('.menu-button');
+            console.log(event.target);
+            if(event.target.classList.contains('menu-icon')) return;
+            if(event.target.classList.contains('menu-items')) return;
+                menu.style.display = 'none'; 
+        });
+
+    </script>
+    
+</body>
+</html>

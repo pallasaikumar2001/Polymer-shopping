@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Outerwear</title>
+    <link rel="stylesheet" href="outer,tshirts.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="head">
+            <i class="material-icons menu-icon" onclick="toggleMenu()">menu</i> 
+            <a href="shop.html"><div><b> S H O P </b></div></a>
+            <a href="cart.html"><i class="material-icons" style="opacity: 1;">shopping_cart</i></a>
+        </div>
+        <div class="menu-items option">
+            <a href="mensouters.html"><div>Men's Outerwear</div></a>
+            <a href="ladiesouter.html"><div>Ladies Outerwear</div></a>
+            <a href="menstshirts.html"><div>Men's T-Shirts</div></a>
+            <a href="ladiestshirts.html"><div>Ladies T-Shirts</div></a>
+        </div>
+        <div class="items-bar">
+            <a href="mensouters.html"><div>Men's Outerwear</div></a>
+            <a href="ladiesouter.html"><div>Ladies Outerwear</div></a>
+            <a href="menstshirts.html"><div>Men's T-Shirts</div></a>
+            <a href="ladiestshirts.html"><div>Ladies T-Shirts</div></a>
+        </div>
+        <img class="title-im" src="mens_outerwear.jpg" alt="">
+        <div class="sub-title"><p style="color: black; text-align: center;">Men's Outerwear</p></div>
+        <div class="total-items"><p style="color: gray; text-align: center;font-size: small;">(16 items)</p></div>
+
+        <div class="list">
+            <div class="child">
+                <img src="mensouters/outer1.jpg" alt="">
+                <h6>Men's Tech Shell Full-Zip</h6>
+                <p>$50.20</p>
+            </div>
+            <div class="child">
+                <a href="single.html"><img src="mensouters/outer2.jpg" alt=""></a>
+                <h6>Anvil L/S Crew Neck - Grey</h6>
+                <p>$22.15</p>
+            </div>
+        
+            <div class="child">
+                <img src="mensouters/outer3.jpg" alt="">
+                <h6>Green Flex Fleece Zip Hoodie</h6>
+                <p>$45.65</p>
+            </div>
+            <div class="child">
+                <img src="mensouters/outer4.jpg" alt="">
+                <h6>Android Nylon Packable Jacket</h6>
+                <p>$33.60</p>
+            </div>
+        
+            <div class="child">
+                <img src="mensouters/outer5.jpg" alt="">
+                <h6>Youtube Ultimate Hooded Sweatshirt</h6>
+                <p>$32.35</p>
+            </div>
+            <div class="child">
+                <img src="mensouters/outer6.jpg" alt="">
+                <h6>Grey Heather Fleece Zip Hoodie</h6>
+                <p>$64.20</p>
+            </div>
+            <div class="child">
+                <img src="mensouters/outer7.jpg "alt="">
+                <h6>Vastrm Hoodie</h6>
+                <p>$200.00</p>
+            </div>
+            <div class="child">
+                <img src="mensouters/outer8.jpg" alt="">
+                <h6>Recycled Plastic Bottle Hoodie - Green</h6>
+                <p>$60.95</p>
+            </div>
+            <div class="child">
+                <img src="mensouters/outer9.jpg" alt="">
+                <h6>LRowan Pullover Hood</h6>
+                <p>$60.85</p>
+            </div>
+            <div class="child">
+                <img src="mensouters/outer10.jpg" alt="">
+                <h6>Men's Voyage Fleece Jacket</h6>
+                <p>$48.00</p>
+            </div>
+            <div class="child">
+                <img src="mensouters/outer11.jpg" alt="">
+                <h6>Eco-Jersey Chrome Zip Up Hoodie</h6>
+                <p>$37.75</p>
+            </div>
+            <div class="child">
+                <img src="mensouters/outer12.jpg" alt="">
+                <h6>Android Colorblock Hooded Pullover</h6>
+                <p>$50.20</p>
+            </div>
+            <div class="child">
+                <img src="mensouters/outer13.jpg" alt="">
+                <h6>Tri-blend Full-Zip Hoodie</h6>
+                <p>$52.20</p>
+            </div>
+            <div class="child">
+                <img src="mensouters/outer14.jpg" alt="">
+                <h6>Fleece Full-Zip Hoodie</h6>
+                <p>$45.65</p>
+            </div>
+            <div class="child">
+                <img src="mensouters/outer15.jpg" alt="">
+                <h6>Jacquard-Knit Full-Zip Fleece</h6>
+                <p>$74.90</p>
+            </div>
+            <div class="child">
+                <img src="mensouters/outer16.jpg" alt="">
+                <h6>YouTube Unisex Flex Fleece Zip Hoodie</h6>
+                <p>$45.25</p>
+            </div>
+
+        </div>  
+        <div class="footer">
+            <p class="last">Made by Polymer</p>
+            <button class="foot btn">DEMO ONLY</button>
+        </div>     
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-items');
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        document.addEventListener('click', function(event) {
+            const menu = document.querySelector('.menu-items');
+            const menuButton = document.querySelector('.menu-button');
+            console.log(event.target);
+            if(event.target.classList.contains('menu-icon')) return;
+            if(event.target.classList.contains('menu-items')) return;
+                menu.style.display = 'none'; 
+        });
+
+    </script>
+    
+</body>
+</html>

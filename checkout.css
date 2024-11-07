@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.head h1, .head p {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.info, .payment {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.entryarea {
+    position: relative;
+    margin-bottom: 20px;
+}
+.state {
+    display: flex;
+    gap: 10px;
+}
+
+.state .entryarea {
+    flex: 1; 
+}
+
+
+input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    background: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    pointer-events: none; 
+}
+
+.labelline {
+    position: absolute;
+    left: 0;
+    bottom: 10px; 
+    font-size: 16px;
+    color: gray;
+    transition: all 0.3s ease; 
+    pointer-events: none; 
+}
+
+input:focus + .labelline {
+    transform: translateY(-30px);
+    font-size: 12px;
+    color: rgb(53, 51, 51); 
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* input[type="checkbox"] {
+    margin: 0; /* Remove default margin for a more aligned look */
+
+
+
+.expiry {
+    display: flex;
+    gap: 10px;
+}
+
+.expiry select ,.country{
+    flex: 1; 
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: none;
+    outline: none;
+    font-size: 16px;
+}
+
+
+.expiry .entryarea {
+    flex: 1; 
+}
+
+
+
+.expiry select {
+    flex: 1;
+}
+
+.button {
+    margin-left:0px ;
+    color: white;
+    width: 40%;
+    padding: 0.8rem 7.2rem;
+    text-align: center;
+    background-color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+}
+
+.menu-items {
+    display: none;
+    flex-direction: column;
+    text-align: left;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.option a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+.billing-address .entryarea {
+    margin-bottom: 15px; 
+}
+
+
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.footer {
+    color: rgba(0, 0, 0, 0.508);
+    text-align: center;
+    .foot{
+        padding: 0.5rem 1rem;
+        background-color: black;
+        color: white;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .menu-icon{
+        visibility: hidden;
+    }
+    
+    .main {
+        flex-direction: row;
+        max-width: 1024px;
+    }
+
+    .info, .payment {
+        flex: 1;
+        margin: 0 10px;
+    }
+    .head{
+        max-width: 1024px;
+
+    }
+    
+}
