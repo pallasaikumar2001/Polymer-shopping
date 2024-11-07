@@ -73,7 +73,7 @@ a {
 .child {
     height: 40%;
     max-width: 40%;
-    padding: 1.2rem;
+    padding: 1rem;
     font-size: large;
     text-align: center;
 }
@@ -93,6 +93,10 @@ a {
     padding: 0.5rem 1rem;
     background-color: black;
     color: white;
+}
+p{
+    color: rgba(0, 0, 0, 0.582);
+    font-size: small;
 }
 
 @media (min-width: 768px) {
