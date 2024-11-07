@@ -63,19 +63,19 @@ img {
 .child {
     display: flex;
     justify-content: center;
-    gap: 0; /* Remove gap between child1 and child2 */
+    gap: 0; 
 }
 
 .child1, .child2 {
     flex: 1;
-    margin: 0; /* Remove any default margin */
+    margin: 0; 
     text-align: center;
-    width: 100%; /* Ensure both items are equally sized within the row */
+    width: 100%; 
 }
 
 .child1 img, .child2 img {
-    width: 100%; /* Make images responsive and fill the width */
-    height: 15rem; /* Maintain aspect ratio */
+    width: 100%; 
+    height: 15rem; 
 }
 
 button, p {
@@ -183,6 +183,6 @@ button {
         border: 2px solid black;
         background-color: white;
         cursor: pointer;
-        margin-bottom: 2rem; /* Add extra space under buttons for laptop/tablet */
+        margin-bottom: 2rem; 
     }
 }
