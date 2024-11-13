@@ -23,11 +23,11 @@
             <a href="mt.html"><div>Men's T-Shirts</div></a>
             <a href="lt.html"><div>Ladies T-Shirts</div></a>
         </div>
-        <p style="text-align: center;font-size: 100%; ">Checkout</p>
-        <p style="color: gray; font-size: 80%;">Shop is a demo app - form data will not be sent</p>
+        <p class="heading">Checkout</p>
+        <p class="subheading">Shop is a demo app - form data will not be sent</p>
         <div class="main">
             <div class="info">
-                <h4>Account Information</h4>
+                <h5>Account Information</h5>
                 <div class="entryarea">
                     <input type="text" required>
                     <div class="labelline">Email</div>
@@ -37,7 +37,7 @@
                     <div class="labelline">Phone Number</div>
                 </div>
                 
-                <h4>Shipping Address</h4>
+                <h5>Shipping Address</h5>
                 <div class="entryarea">
                     <input type="text" required>
                     <div class="labelline">Address</div>
@@ -47,7 +47,7 @@
                     <div class="labelline">City</div>
                 </div>
                 <div class="state">
-                    
+
                     <div class="entryarea">
                         <input type="text" required>
                         <div class="labelline">Zip/Postalcode</div>
@@ -64,11 +64,12 @@
                     
                 </select>
                 <br>
-                
-                <h4>Billing Address</h4>
+        
+                <h5>Billing Address</h5>
                 <div class="checkbox">
+                    <input type="checkbox" id="billingCheckbox">&nbsp
                     <label for="billingCheckbox">Use different billing address</label>
-                    <input type="checkbox" id="billingCheckbox">
+                    
                     
                 </div>
 
@@ -100,7 +101,7 @@
                 
             </div>
             <div class="payment">
-                <h4>Payment Method</h4>
+                <h5>Payment Method</h5>
                 <div class="entryarea">
                     <input type="text" required>
                     <div class="labelline">Cardholder Name</div>
@@ -147,8 +148,8 @@
                         <div class="labelline">CVV</div>
                     </div>
                 </div>
-                <h4>Order Summary</h4>
-                    <div class="item1" style="display: flex; justify-content: space-between;">
+                <h5>Order Summary</h5>
+                    <div class="item1" >
                         <p>Vastrm Hoodie</p>
                         <p>$200</p>
                     </div>
@@ -184,11 +185,6 @@
             if(event.target.classList.contains('menu-items')) return;
                 menu.style.display = 'none'; 
         });
-        document.getElementById('billingCheckbox').addEventListener('change', function() {
-            const billingAddress = document.querySelector('.billing-address');
-            billingAddress.style.display = this.checked ? 'block' : 'none';
-        });
-
 
     </script>
 </body>
