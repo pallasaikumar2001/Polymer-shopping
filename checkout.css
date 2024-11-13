@@ -166,7 +166,7 @@ input:focus + .labelline {
 }
 
 .billing-address .entryarea {
-    margin-bottom: 15px; 
+    margin-bottom: 1rem; 
 }
 
 select {
@@ -175,6 +175,7 @@ select {
     margin: 5px 0;
     border: 1px solid white;
     border-radius: 4px;
+    margin-bottom: 1px solid rgba(0, 0, 0, 0.493);
 }
 
 .footer {
@@ -187,28 +188,27 @@ select {
     background-color: black;
     color: white;
 }
-#billingCheckbox{
-    border: 2px solid green;
-    margin-left: -7.5rem;
-}
-label{
-    margin-left: -6rem;
-}
-.checkbox {
+
+.checking{
+    display: felx;
+    flex-direction: row;
     /* border: 2px solid red; */
-    display: flex;
-    font-size: smaller;
-    /* justify-content: flex-start; */
-    /* display: flex;
-    flex-direction: row-reverse;
-    /* align-items: center; */
-    /* justify-content: fl; */
-    /* left=0;
-    justify-content: flex-start; */ 
+    justify-content: flex-start;
 }
+.checkinginput{
+    /* border: 2px solid green; */
+    width: fit-content;
+}
+
+label{
+    margin-left: 0;
+} 
 
 
 @media (min-width: 768px) {
+    body{
+        padding: 1rem;
+    }
     .menu-icon {
         visibility: hidden;
     }
@@ -228,7 +228,9 @@ label{
     .placeorder{
         /* align-items: flex-start; */
         position: relative;
-        padding: 0.3rem 0;
+        width: fit-content;
+        padding: 0.5rem 2.4rem;
+        margin: 0px;
         justify-content: flex-start;
         font-size: 90%;
         background-color: white;
@@ -244,6 +246,19 @@ label{
     .footer{
         visibility: visible;
     }
+    .checking{
+        display: felx;
+        flex-direction: row;
+        /* border: 2px solid red; */
+        justify-content: flex-start;
+    }
+    .checkinginput{
+        /* border: 2px solid green; */
+        width: fit-content;
+    }
     
+    label{
+        margin-left: 0;
+    }  
     
 }

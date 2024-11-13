@@ -66,9 +66,9 @@
                 <br>
         
                 <h5>Billing Address</h5>
-                <div class="checkbox">
-                    <input type="checkbox" id="billingCheckbox">&nbsp
-                    <label for="billingCheckbox">Use different billing address</label>
+                <div class="checking">
+                    <input class="checkinginput" type="checkbox" id="billingCheckbox">
+                    <label class="'checkingoutput" for="billingCheckbox">Use different billing address</label>
                     
                     
                 </div>
@@ -184,6 +184,10 @@
             if(event.target.classList.contains('menu-icon')) return;
             if(event.target.classList.contains('menu-items')) return;
                 menu.style.display = 'none'; 
+        document.getElementById('billingCheckbox').addEventListener('change', function() {
+            const billingAddress = document.querySelector('.billing-address');
+            billingAddress.style.display = this.checked ? 'block' : 'none';
+        });
         });
 
     </script>
