@@ -31,15 +31,17 @@ a {
 }
 
 .menu-items {
-    display: none; 
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     background-color: white;
-    width: 20rem;
-    z-index: 9;
+    height: 100vh;
+    width: 70%;
+    z-index: 1;
     row-gap: 1.5rem;
     position: fixed;
     top: 0;
+    padding-top: 3rem;
 }
 .items-bar{
     display: none;

@@ -111,7 +111,8 @@ input:focus + .labelline {
 
 .expiry {
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
+    justify-content: space-between;
 }
 
 .expiry select, .country {
